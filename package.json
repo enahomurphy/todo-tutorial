@@ -1,0 +1,37 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "simple todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enahomurphy/todo-tutorial.git"
+  },
+  "keywords": [
+    "todo",
+    "app"
+  ],
+  "author": "Enaho Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enahomurphy/todo-tutorial/issues"
+  },
+  "homepage": "https://github.com/enahomurphy/todo-tutorial#readme",
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "parcel": "^2.0.0-alpha.3.2",
+    "parcel-bundler": "^1.12.4"
+  }
+}
