@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
 
+import Todo from './Todo';
+
 class App extends PureComponent {
   render() {
     return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
+      <Todo />
     );
   }
 }
