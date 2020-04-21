@@ -14,13 +14,29 @@ class Todo extends Component {
         },
       ],
     };
+
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  onSubmit(value) {
+    this.setState(({ todos }) => {
+      const todo = { id: todos.length + 1, title: value };
+
+      return {
+        todos: [...todos, todo],
+      };
+    });
   }
 
   render() {
-    const { todos } = this.state;
+    const { todos, defaultValue } = this.state;
     return (
       <div>
-        <Input />
+        <Input
+          onSubmit={this.onSubmit}
+          defaultValue={defaultValue}
+          placeholder="Todo placeholder"
+        />
         {
           todos.map(todo => (
             <h1 key={todo.id}>{todo.title}</h1>
